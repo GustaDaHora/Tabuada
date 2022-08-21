@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        font: 3vh Arial, Helvetica, sans-serif;
+    }
+
+    div {
+        margin: 2vh 0vh;
+        max-width: 80vh;
+    }
+
+    body,
+    html {
+        background-color: #6493bb;
+    }
+
+    h1 {
+        font: bold 5vh Arial, Helvetica, sans-serif;
+        color: whitesmoke;
+        text-align: center;
+
+        margin: 5vh;
+    }
+
+    section {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 80vh;
+
+        padding: 5vh;
+        margin: 5vh 0vh;
+
+        color: black;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px #0000006b;
+    }
+
+    section p {
+        margin: 4vh;
+    }
+
+    footer {
+        font: bold 3vh Arial, Helvetica, sans-serif;
+        color: whitesmoke;
+        background-color: #375066;
+
+        position: relative;
+        bottom: 0px;
+        text-align: center;
+        padding: 5vh;
+    }
+
+    select {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        overflow-y: hidden;
+    }
+
+    @media screen and (max-width: 768px) {
+        section {
+            width: 40vh;
+            margin: 1vh;
+        }
+
+        input[type="number"] {
+            width: 18vh;
+        }
+
+        input[type="button"] {
+            margin: 1vh 0vh 1vh 6vh;
+        }
+
+        h1 {
+            font: bold 3vh Arial, Helvetica, sans-serif;
+            color: whitesmoke;
+            text-align: center;
+
+            margin: 1vh;
+        }
+
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section>
+        <div class="test">
+            <p>Numero: <input type="number" id="numero"> <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+            </p>
+        </div>
+        <div>
+            <select name="tabuada" id="seltab" size="20"></select>
+        </div>
+    </section>
+    <footer>&copy;daHora</footer>
+</body>
+<script src="script.js" type="text/javascript"></script>
+
+</html>
